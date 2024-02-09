@@ -29,6 +29,12 @@ public class CategoryMapper implements IMapper<Category> {
 
     @Override
     public Category resultSetToObject(ResultSet rs) throws SQLException {
+        if(rs.next()){
+            return Category.builder()
+                    .id(rs.getInt(ID))
+                    .title(rs.getString(TITLE))
+                    .build();
+        }
         return null;
     }
 }

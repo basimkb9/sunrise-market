@@ -1,11 +1,14 @@
 package org.sunrisemarket.repository;
 
+import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
+import java.util.Optional;
 
 public interface BaseRepository<T>{
-    int insert(T obj);
+    void insert(T obj) throws SQLException;
     List<T> getAll();
     T getById(Long id);
-    int update(T obj, Long id);
-    int deleteById(Long id);
+    void update(T obj, Long id) throws SQLException;
+    void deleteById(Long id) throws SQLException;
 }

@@ -5,9 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0282e127-4971-476d-9a1b-1eb6c90180ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/exception/RecordAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/exception/ResourceNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/unitofwork/UnitOfWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/unitofwork/UnitOfWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/dbcon/SunriseMarketDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/dbcon/SunriseMarketDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/CartItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/CartItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/CartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/CartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/PaymentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/PaymentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/CartItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/CartItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/PaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/PurchaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/PurchaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/SoldItemsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/repository/SoldItemsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CartItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CartItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/PurchaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/PurchaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/SoldItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/SoldItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sunrisemarket/unitofwork/UnitOfWork.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +63,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "Application.run.executor": "Run",
     "Maven.sunrise-market [clean].executor": "Run",
+    "Maven.sunrise-market [compile].executor": "Run",
     "Maven.sunrise-market [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -47,12 +74,22 @@
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/siddibas/OneDrive - PERSEUS MANAGEMENT GROUP INC/Documents/sunriseapp",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "vcs.Perforce"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.sunrisemarket.Main" />
+      <module name="sunrise-market" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,5 +110,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CategoryService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/sunrisemarket/services/CategoryService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.mysql.cj.jdbc.result.ResultSetImpl" memberName="serverInfo" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

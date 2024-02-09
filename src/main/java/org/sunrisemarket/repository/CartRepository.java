@@ -3,11 +3,12 @@ package org.sunrisemarket.repository;
 import org.sunrisemarket.model.Cart;
 
 import java.util.List;
+import java.util.Optional;
 
 public class CartRepository implements BaseRepository<Cart> {
     @Override
-    public int insert(Cart obj) {
-        return 0;
+    public void insert(Cart obj) {
+
     }
 
     @Override
@@ -21,12 +22,12 @@ public class CartRepository implements BaseRepository<Cart> {
     }
 
     @Override
-    public int update(Cart obj, Long id) {
-        return 0;
+    public void update(Cart obj, Long id) {
+
     }
 
     @Override
-    public int deleteById(Long id) {
-        return 0;
+    public void deleteById(Long id) {
+
     }
 }

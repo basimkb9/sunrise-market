@@ -6,18 +6,18 @@ import java.util.List;
 
 public class SoldItemService implements BaseService<SoldItems> {
     @Override
-    public int insert(SoldItems obj) {
-        return 0;
+    public void insert(SoldItems obj) {
+
     }
 
     @Override
-    public int update(SoldItems obj, Long id) {
-        return 0;
+    public void update(SoldItems obj, Long id) {
+
     }
 
     @Override
-    public int delete(Long id) {
-        return 0;
+    public void delete(Long id) {
+
     }
 
     @Override

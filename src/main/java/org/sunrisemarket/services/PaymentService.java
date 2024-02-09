@@ -6,18 +6,18 @@ import java.util.List;
 
 public class PaymentService implements BaseService<Payment> {
     @Override
-    public int insert(Payment obj) {
-        return 0;
+    public void insert(Payment obj) {
+
     }
 
     @Override
-    public int update(Payment obj, Long id) {
-        return 0;
+    public void update(Payment obj, Long id) {
+
     }
 
     @Override
-    public int delete(Long id) {
-        return 0;
+    public void delete(Long id) {
+
     }
 
     @Override

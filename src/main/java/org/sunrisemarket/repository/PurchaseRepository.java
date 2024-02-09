@@ -3,11 +3,12 @@ package org.sunrisemarket.repository;
 import org.sunrisemarket.model.Purchase;
 
 import java.util.List;
+import java.util.Optional;
 
 public class PurchaseRepository implements BaseRepository<Purchase>{
     @Override
-    public int insert(Purchase obj) {
-        return 0;
+    public void insert(Purchase obj) {
+
     }
 
     @Override
@@ -21,12 +22,12 @@ public class PurchaseRepository implements BaseRepository<Purchase>{
     }
 
     @Override
-    public int update(Purchase obj, Long id) {
-        return 0;
+    public void update(Purchase obj, Long id) {
+
     }
 
     @Override
-    public int deleteById(Long id) {
-        return 0;
+    public void deleteById(Long id) {
+
     }
 }

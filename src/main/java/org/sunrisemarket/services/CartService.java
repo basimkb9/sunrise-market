@@ -6,18 +6,18 @@ import java.util.List;
 
 public class CartService implements BaseService<Cart> {
     @Override
-    public int insert(Cart obj) {
-        return 0;
+    public void insert(Cart obj) {
+
     }
 
     @Override
-    public int update(Cart obj, Long id) {
-        return 0;
+    public void update(Cart obj, Long id) {
+
     }
 
     @Override
-    public int delete(Long id) {
-        return 0;
+    public void delete(Long id) {
+
     }
 
     @Override

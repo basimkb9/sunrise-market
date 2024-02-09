@@ -6,18 +6,18 @@ import java.util.List;
 
 public class PurchaseService implements BaseService<Purchase> {
     @Override
-    public int insert(Purchase obj) {
-        return 0;
+    public void insert(Purchase obj) {
+
     }
 
     @Override
-    public int update(Purchase obj, Long id) {
-        return 0;
+    public void update(Purchase obj, Long id) {
+
     }
 
     @Override
-    public int delete(Long id) {
-        return 0;
+    public void delete(Long id) {
+
     }
 
     @Override

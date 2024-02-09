@@ -7,21 +7,19 @@ import org.sunrisemarket.mapper.CategoryMapper;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
+import java.util.Optional;
 
 public class CategoryRepository extends SunriseMarketDB implements BaseRepository<Category> {
     private final CategoryMapper categoryMapper = new CategoryMapper();
 
     @Override
-    public int insert(Category obj) {
-        try {
+    public void insert(Category obj) throws SQLException {
             PreparedStatement ps = DBConn.prepareStatement(SQL_QUERY_CONSTANTS.INSERT_INTO_CATEGORY);
             ps.setString(1,obj.getTitle());
 
-            return ps.executeUpdate();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+            ps.executeUpdate();
     }
 
     @Override
@@ -50,25 +48,39 @@ public class CategoryRepository extends SunriseMarketDB implements BaseRepositor
     }
 
     @Override
-    public int update(Category obj, Long id) {
+    public void update(Category obj, Long id) throws SQLException{
         try {
             PreparedStatement ps = DBConn.prepareStatement(SQL_QUERY_CONSTANTS.UPDATE_CATEGORY);
             ps.setString(1,obj.getTitle());
             ps.setLong(2,id);
 
-            return ps.executeUpdate();
+            ps.executeUpdate();
         }catch (SQLException e){
             throw new RuntimeException(e);
         }
     }
 
     @Override
-    public int deleteById(Long id) {
+    public void deleteById(Long id) throws SQLException{
         try {
             PreparedStatement ps = DBConn.prepareStatement(SQL_QUERY_CONSTANTS.DELETE_CATEGORY);
             ps.setLong(1,id);
 
-            return ps.executeUpdate();
+            ps.executeUpdate();
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    public Category getByName(String name){
+        try {
+            PreparedStatement ps = DBConn.prepareStatement(SQL_QUERY_CONSTANTS.GET_BY_NAME);
+            ps.setString(1,name);
+
+            ResultSet rs = ps.executeQuery();
+
+            return categoryMapper.resultSetToObject(rs);
+
         }catch (SQLException e){
             throw new RuntimeException(e);
         }
@@ -78,6 +90,7 @@ public class CategoryRepository extends SunriseMarketDB implements BaseRepositor
         private static final String INSERT_INTO_CATEGORY = "INSERT INTO CATEGORY(title) VALUES(?)";
         private static final String GET_ALL_CATEGORY = "SELECT * FROM CATEGORY";
         private static final String GET_BY_ID = "SELECT * FROM CATEGORY WHERE id=?";
+        private static final String GET_BY_NAME = "SELECT * FROM CATEGORY WHERE title=?";
         private static final String UPDATE_CATEGORY = "UPDATE CATEGORY SET title=? where id=?";
         private static final String DELETE_CATEGORY = "DELETE FROM CATEGORY WHERE id=?";
     }

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SunriseMarketDB {
-    protected Connection DBConn;
+    public static Connection DBConn;
     private static final String connURL = "jdbc:mysql://127.0.0.1:3306/sunrisemarket";
     private static final String dbUser = "root";
     private static final String dbPassword = "basim123";
